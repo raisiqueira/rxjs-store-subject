@@ -1,0 +1,21 @@
+{
+  "name": "rxjs-subject-store",
+  "version": "1.0.0",
+  "author": "Rai Siqueira <rai93siqueira@gmail.com>",
+  "description": "A state management implemented using RxJS",
+  "keywords": [
+    "rxjs",
+    "observable",
+    "store",
+    "redux",
+    "angular",
+    "state management"
+  ],
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "rimraf": "^2.6.3",
+    "rxjs": "^6.4.0",
+    "typescript": "^3.4.3"
+  }
+}
