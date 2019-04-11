@@ -1,21 +1,57 @@
 {
   "name": "rxjs-subject-store",
   "version": "1.0.0",
-  "author": "Rai Siqueira <rai93siqueira@gmail.com>",
+  "author": "Rai Siqueira <rai93siqueira@gmail.com> (https://raisiqueira.dev)",
   "description": "A state management implemented using RxJS",
   "keywords": [
     "rxjs",
-    "observable",
+    "rxjs-subjects",
     "store",
     "redux",
-    "angular",
-    "state management"
+    "angular"
   ],
-  "main": "index.js",
+  "main": "./dist/index.js",
+  "typings": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "license": "MIT",
+  "scripts": {
+    "start": "rimraf dist/**/* && tsc --watch",
+    "build": "rimraf dist/**/* && tsc",
+    "clean": "rimraf dist/**/*",
+    "test": "jest"
+  },
+  "peerDependencies": {
+    "rxjs": ">=5.x <=6.x"
+  },
   "devDependencies": {
+    "@types/jest": "^24.0.11",
+    "@typescript-eslint/eslint-plugin": "^1.6.0",
+    "@typescript-eslint/parser": "^1.6.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-import-resolver-typescript": "^1.1.1",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "jest": "^24.7.1",
     "rimraf": "^2.6.3",
     "rxjs": "^6.4.0",
+    "ts-jest": "^24.0.2",
     "typescript": "^3.4.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/raisiqueira/rxjs-store-subject"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
+    "transform": {
+      "\\.ts$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.ts$"
   }
 }

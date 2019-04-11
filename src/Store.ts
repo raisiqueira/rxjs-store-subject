@@ -3,6 +3,7 @@ import { Observable, BehaviorSubject } from "rxjs";
 export abstract class Store<S> {
     /**
      * Observable from our state
+     * @template S - State
      */
     public state$: Observable<S>;
 
