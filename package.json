@@ -1,5 +1,5 @@
 {
-  "name": "rxjs-subject-store",
+  "name": "@raisiqueira/rxjs-subject-store",
   "version": "0.1.0",
   "author": "Rai Siqueira <rai93siqueira@gmail.com> (https://raisiqueira.dev)",
   "description": "A basic state management implemented using RxJS Subjects.",
