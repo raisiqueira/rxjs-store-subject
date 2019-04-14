@@ -3,3 +3,7 @@ tsconfig.json
 src
 .eslintrc.js
 .idea
+__tests__
+.git/
+.gitignore
+.editorconfig
